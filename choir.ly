@@ -2,7 +2,7 @@
 
 \header {
   title = 	"High Country Weather"
-  subtitle = 	"by James K Baxter"
+  subsubtitle =	"Text by James K Baxter (1926 - 1972)"
   composer =	"Timothy Burgess"
 }
 
@@ -64,7 +64,30 @@ yetsee-soprano = {
   <d>4         %sy
   <fis>4       %stra
   <g>4         %anger
-  r4
+  r4 \break
+
+  <b>8     %su
+  <c'>4       %ren
+  <e>8     %der
+  <b>4       %to
+
+  r8
+  <b>8     %su
+  <c'>4       %ren
+  <e>8     %der
+  <b>4       %to
+
+  %<d, b, d b d' g' b'>8     %su
+  %<a, c c' e' a' c''>4       %ren
+  %<a, c e c' e' a' c''>8     %der
+  %<b, d g b d' g' b'>4       %to
+
+  <b, d g b d' g' b'>4       %the
+  <c e a c' e' a'>4          %sky
+  <e, e g b e' g' b'>4       %your
+  <a, d fis a c' fis' a'>4.  %ang
+  <c, e g c' e' g'>8         %ry
+  <g, g b d' g'>2            %heart
   }
 }
 
@@ -108,6 +131,17 @@ yetsee-alto = {
   <fis>4       %stra
   <d>4         %anger
   r4
+
+  <g>8         %su
+  <e>4         %ren
+  <c>8         %der
+  <d>4         %to
+
+  r8
+  <g>8         %su
+  <e>4         %ren
+  <c>8         %der
+  <d>4         %to
   }
 }
 
@@ -146,6 +180,17 @@ yetsee-tenor = {
   <a>4         %stra
   <b>4         %anger
   r4
+
+  <b>8         %su
+  <c'>4        %ren
+  <a>8         %der
+  <b>4         %to
+
+  r8
+  <b>8         %su
+  <c'>4        %ren
+  <a>8         %der
+  <b>4         %to
   }
 }
 
@@ -183,6 +228,17 @@ yetsee-bass = {
   <d>4         %stra
   <g>4         %anger
   r4
+
+  <d>8         %su
+  <a>4         %ren
+  <a>8         %der
+  <b,>4        %to
+
+  r8
+  <d>8         %su
+  <a>4         %ren
+  <a>8         %der
+  <b,>4        %to
   }
 }
 
@@ -263,6 +319,8 @@ sopranowords = \lyricmode {
   on the up -- land road
   ride ea -- sy stra -- anger
   ride ea -- sy stra -- anger
+  surr -- en -- der to surr -- en -- der to
+  the sky your ang -- ry heart
 }
 
 
