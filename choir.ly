@@ -27,112 +27,137 @@ alone-bass = {
 
 yetsee-soprano = {
   \fixed c' {
-  <e'>4  % Yet
-  <g'>2 % see
-  <e'>4 % Yet
+  <e'>4        % Yet
+  <g'>2        % see
+  <e'>4        % Yet
   <d'>2 \break % see
-  <e'>4  % Yet
-  <g'>2 % see
-  <e'>4 % Yet
-  <d'>2 % see
-  <b>4          %the
-  <fis'>4    %red
-  <g'>4      %gold
-  <e'>4         %cirr
-  <d'>2    %us
+  <e'>4        % Yet
+  <g'>2        % see
+  <e'>4        % Yet
+  <d'>2        % see
+  <b>4         %the
+  <fis'>4      %red
+  <g'>4        %gold
+  <e'>4        %cirr
+  <d'>2        %us
   <d'>8        %o
   <d'>8        %ver
   <d'>4        %snow
-  <b>4                %moun
-  <d'>4            %tain
-  <a>2  \break      %shine
-  <d'>4      %on
-  <d'>4.     %the
-  <b>8      %up
-  <d'>4       %land
-  <c'>4      %road
+  <b>4         %moun
+  <d'>4        %tain
+  <a>2  \break %shine
+
+  <d'>4        %on
+  <d'>4.       %the
+  <a>8         %up
+  <d'>4        %land
+  <c'>4        %road
+  r4
+  <d'>4        %ride
+  <d'>4.       %ea
+  <a>8         %sy
+  <d'>4        %stra
+  <c'>4        %nger
   r4
   }
 }
 
 yetsee-alto = {
   \fixed c' {
-  <b>4  % Yet
-  <c'>2 % see
-  <a>4 % Yet
-  <b>2 % see
-  <b>4  % Yet
-  <c'>2 % see
-  <a>4 % Yet
-  <b>2 % see
-  <g>4          %the
-  <a>4    %red
-  <b>4      %gold
+  <b>4         % Yet
+  <c'>2        % see
+  <a>4         % Yet
+  <b>2         % see
+  <b>4         % Yet
+  <c'>2        % see
+  <a>4         % Yet
+  <b>2         % see
+  <g>4         %the
+  <a>4         %red
+  <b>4         %gold
   <a>4         %cirr
-  <d>2    %us
-  <b>8        %o
-  <d'>8  %ver
-  <g>4        %snow
-  <g>4                %moun
-  <g>4            %tain
-  <fis>2      %shine
-  <fis>4      %on
+  <d>2         %us
+  <b>8         %o
+  <d'>8        %ver
+  <g>4         %snow
+  <g>4         %moun
+  <g>4         %tain
+  <fis>2       %shine
+
+  <fis>4       %on
   <g>4.        %the
-  <d>8         %up
-  %<g, d g b d' g'>4          %land
-  %<c e g c' e' g'>4          %road
+  <b>8         %up
+  <b>4         %land
+  <g>4         %road
+  r4
+  <fis>4       %ride
+  <g>4.        %ea
+  <b>8         %sy
+  <b>4         %stra
+  <g>4         %nger
   r4
   }
 }
 
 yetsee-tenor = {
   \fixed c {
-  <g'>4  % Yet
-  <e'>2 % see
-  <a>4 % Yet
-  <d'>2 % see
-  <g>4          %the
-  <a>4    %red
-  <b>4      %gold
+  <g'>4        % Yet
+  <e'>2        % see
+  <a>4         % Yet
+  <d'>2        % see
+  <g>4         %the
+  <a>4         %red
+  <b>4         %gold
   <a>4         %cirr
-  <fis>2 %us
-  <g>8        %o
-  <a>8  %ver
+  <fis>2       %us
+  <g>8         %o
+  <a>8         %ver
   <d'>4        %snow
-  <b>4                %moun
-  <b>4            %tain
-  <fis>2      %shine
-  <c'>4    %on
-  <d'>4.        %the
-  <g>8         %up
-  %<g, d g b d' g'>4          %land
-  %<c e g c' e' g'>4          %road
+  <b>4         %moun
+  <b>4         %tain
+  <fis>2       %shine
+
+  <c'>4        %on
+  <d'>4.       %the
+  <d'>8        %up
+  <d'>4        %land
+  <e>4         %road
+  r4
+  r2 r8
+  <d'>8        %sy
+  <d'>4        %stra
+  <e>4         %nger
   r4
   }
 }
 
 yetsee-bass = {
   \fixed c {
-  <b>4    % Yet
-  <c'>2   % see
-  <e>4    % Yet
-  <b>2    % see
-  <e>4    %the
-  <d>4    %red
-  <e>4    %gold
-  <c>4    %cirr
-  <d>2    %us
-  <d>8    %o
-  <fis>8    %ver
-  <g>4        %snow
-  <e>4                %moun
-  <d>4            %tain
-  <d>2      %shine
-  <a,>4    %on
-  <a,>4.      %the
-  <b,>8       %up
+  <b>4         % Yet
+  <c'>2        % see
+  <e>4         % Yet
+  <b>2         % see
+  <e>4         %the
+  <d>4         %red
+  <e>4         %gold
+  <c>4         %cirr
+  <d>2         %us
+  <d>8         %o
+  <fis>8       %ver
+  <g>4         %snow
+  <e>4         %moun
+  <d>4         %tain
+  <d>2         %shine
+
+  <a,>4        %on
+  <b,>4.       %the
+  <g,>8        %up
   <g,>4        %land
-  <c>4        %road
+  <c>4         %road
+  r4
+  R2.
+  <g,>4        %stra
+  <c>4         %nger
   r4
   }
 }
@@ -203,7 +228,7 @@ lh =  {
 
    
 sopranonotes = \relative c'' {
-  R2.*5
+  R2.*1
   \yetsee-soprano
 }
 sopranowords = \lyricmode {
@@ -211,11 +236,13 @@ sopranowords = \lyricmode {
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
+  on the up -- land road
+  ride ea -- sy stra -- anger
 }
 
 
 altonotes = \relative c'' {
-  R2.*5
+  R2.*1
   \yetsee-alto
 }
 altowords = \lyricmode {
@@ -223,35 +250,40 @@ altowords = \lyricmode {
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
+  on the up -- land road
+  ride ea -- sy stra -- anger
 }
 
 
 tenornotes = {
   \clef "G_8"
-  \alone-tenor
-  R2.*2
+  %\alone-tenor
+  R2.*3
   \yetsee-tenor
 }
 tenorwords = \lyricmode {
-  A -- lone we are born and die a -- lone
+  %A -- lone we are born and die a -- lone
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
+  on the up -- land road
+  sy stra -- anger
 }
 
 
 bassnotes = {
   \clef bass
-  \alone-bass
-  R2.*2
+  %\alone-bass
+  R2.*3
   \yetsee-bass
 }
 basswords = \lyricmode {
-  A -- lone we are born and die a -- lone
+  %A -- lone we are born and die a -- lone
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
-  on the up -- land road ride ea -- sy stra -- anger
+  on the up -- land road
+  stra -- anger
 }
 
 \score {
