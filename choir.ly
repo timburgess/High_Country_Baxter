@@ -62,8 +62,8 @@ yetsee-soprano = {
   <c'>4        %ride
   <b>4         %ea
   <d>4         %sy
-  <d, a, d a d' fis' a'>4   %stra
-  <g, b, d g b d' g'>4      %anger
+  <fis>4       %stra
+  <g>4         %anger
   r4
   }
 }
@@ -105,8 +105,9 @@ yetsee-alto = {
   <a>4         %ride
   <g>4         %ea
   <b>4         %sy
-  %<d, a, d a d' fis' a'>4   %stra
-  %<g, b, d g b d' g'>4      %anger
+  <fis>4       %stra
+  <d>4         %anger
+  r4
   }
 }
 
@@ -139,11 +140,12 @@ yetsee-tenor = {
   <d'>4        %stra
   <e>4         %nger
   r4
-  <c'>4       %ride
-  <b>4        %ea
-  <g>4        %sy
-  %<d, a, d a d' fis' a'>4   %stra
-  %<g, b, d g b d' g'>4      %anger
+  <c'>4        %ride
+  <b>4         %ea
+  <g>4         %sy
+  <a>4         %stra
+  <b>4         %anger
+  r4
   }
 }
 
@@ -178,8 +180,9 @@ yetsee-bass = {
   <e>4         %ride
   <e>4         %ea
   <g>4         %sy
-  %<d, a, d a d' fis' a'>4   %stra
-  %<g, b, d g b d' g'>4      %anger
+  <d>4         %stra
+  <g>4         %anger
+  r4
   }
 }
 
@@ -274,6 +277,7 @@ altowords = \lyricmode {
   o -- ver snow moun -- tain shine
   on the up -- land road
   ride ea -- sy stra -- anger
+  ride ea -- sy stra -- anger
 }
 
 
@@ -290,6 +294,7 @@ tenorwords = \lyricmode {
   o -- ver snow moun -- tain shine
   on the up -- land road
   sy stra -- anger
+  ride ea -- sy stra -- anger
 }
 
 
@@ -306,6 +311,7 @@ basswords = \lyricmode {
   o -- ver snow moun -- tain shine
   on the up -- land road
   stra -- anger
+  ride ea -- sy stra -- anger
 }
 
 \score {
