@@ -77,17 +77,15 @@ yetsee-soprano = {
   <e>8     %der
   <b>4       %to
 
-  %<d, b, d b d' g' b'>8     %su
-  %<a, c c' e' a' c''>4       %ren
-  %<a, c e c' e' a' c''>8     %der
-  %<b, d g b d' g' b'>4       %to
-
-  <b, d g b d' g' b'>4       %the
-  <c e a c' e' a'>4          %sky
-  <e, e g b e' g' b'>4       %your
-  <a, d fis a c' fis' a'>4.  %ang
-  <c, e g c' e' g'>8         %ry
-  <g, g b d' g'>2            %heart
+  <b>4       %the
+  %<b, d g b d' g' b'>4       %the
+  <c'>4          %sky
+  <b>4       %your
+  <a>4.  %ang
+  <g>4       %ry
+  <g>2            %heart
+  r4
+  \bar "||"
   }
 }
 
@@ -142,6 +140,14 @@ yetsee-alto = {
   <e>4         %ren
   <c>8         %der
   <d>4         %to
+
+  <d>4       %the
+  <a>4         %sky
+  <g>4       %your
+  <fis>4.  %ang
+  <g>4         %ry
+  <d>2         %heart
+  r4
   }
 }
 
@@ -191,6 +197,14 @@ yetsee-tenor = {
   <c'>4        %ren
   <a>8         %der
   <b>4         %to
+
+  <b>4       %the
+  <e'>4          %sky
+  <e'>4       %your
+  <c'>4.  %ang
+  <e'>4         %ry
+  <b>2         %heart
+  r4
   }
 }
 
@@ -230,15 +244,24 @@ yetsee-bass = {
   r4
 
   <d>8         %su
-  <a>4         %ren
-  <a>8         %der
+  <a,>4         %ren
+  <a,>8         %der
   <b,>4        %to
 
   r8
   <d>8         %su
-  <a>4         %ren
-  <a>8         %der
+  <a,>4         %ren
+  <a,>8         %der
   <b,>4        %to
+
+  <b,>4        %the
+  <c>4          %sky
+  <e>4       %your
+  <a>4.  %ang
+  %<a, d fis a c' fis' a'>4.  %ang
+  <c>4         %ry
+  <g,>2        %heart
+  r4
   }
 }
 
@@ -308,7 +331,7 @@ lh =  {
 
    
 sopranonotes = \relative c'' {
-  R2.*1
+  R2.*5
   \yetsee-soprano
 }
 sopranowords = \lyricmode {
@@ -325,7 +348,7 @@ sopranowords = \lyricmode {
 
 
 altonotes = \relative c'' {
-  R2.*1
+  R2.*5
   \yetsee-alto
 }
 altowords = \lyricmode {
@@ -336,40 +359,46 @@ altowords = \lyricmode {
   on the up -- land road
   ride ea -- sy stra -- anger
   ride ea -- sy stra -- anger
+  surr -- en -- der to surr -- en -- der to
+  the sky your ang -- ry heart
 }
 
 
 tenornotes = {
   \clef "G_8"
-  %\alone-tenor
-  R2.*3
+  \alone-tenor
+  R2.*2
   \yetsee-tenor
 }
 tenorwords = \lyricmode {
-  %A -- lone we are born and die a -- lone
+  A -- lone we are born and die a -- lone
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
   on the up -- land road
   sy stra -- anger
   ride ea -- sy stra -- anger
+  surr -- en -- der to surr -- en -- der to
+  the sky your ang -- ry heart
 }
 
 
 bassnotes = {
   \clef bass
-  %\alone-bass
-  R2.*3
+  \alone-bass
+  R2.*2
   \yetsee-bass
 }
 basswords = \lyricmode {
-  %A -- lone we are born and die a -- lone
+  A -- lone we are born and die a -- lone
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
   on the up -- land road
   stra -- anger
   ride ea -- sy stra -- anger
+  surr -- en -- der to surr -- en -- der to
+  the sky your ang -- ry heart
 }
 
 \score {
