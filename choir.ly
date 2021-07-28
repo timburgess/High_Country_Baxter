@@ -58,6 +58,12 @@ yetsee-soprano = {
   <a>8         %sy
   <d'>4        %stra
   <c'>4        %nger
+  r4 \break
+  <c'>4        %ride
+  <b>4         %ea
+  <d>4         %sy
+  <d, a, d a d' fis' a'>4   %stra
+  <g, b, d g b d' g'>4      %anger
   r4
   }
 }
@@ -96,6 +102,11 @@ yetsee-alto = {
   <b>4         %stra
   <g>4         %nger
   r4
+  <a>4         %ride
+  <g>4         %ea
+  <b>4         %sy
+  %<d, a, d a d' fis' a'>4   %stra
+  %<g, b, d g b d' g'>4      %anger
   }
 }
 
@@ -128,6 +139,11 @@ yetsee-tenor = {
   <d'>4        %stra
   <e>4         %nger
   r4
+  <c'>4       %ride
+  <b>4        %ea
+  <g>4        %sy
+  %<d, a, d a d' fis' a'>4   %stra
+  %<g, b, d g b d' g'>4      %anger
   }
 }
 
@@ -159,6 +175,11 @@ yetsee-bass = {
   <g,>4        %stra
   <c>4         %nger
   r4
+  <e>4         %ride
+  <e>4         %ea
+  <g>4         %sy
+  %<d, a, d a d' fis' a'>4   %stra
+  %<g, b, d g b d' g'>4      %anger
   }
 }
 
@@ -238,6 +259,7 @@ sopranowords = \lyricmode {
   o -- ver snow moun -- tain shine
   on the up -- land road
   ride ea -- sy stra -- anger
+  ride ea -- sy stra -- anger
 }
 
 
@@ -287,7 +309,7 @@ basswords = \lyricmode {
 }
 
 \score {
-  \new ChoirStaff \with {midiInstrument = "church organ"} <<
+  \new ChoirStaff \with {midiInstrument = "flute"} <<
     \new Staff <<
       \new Voice = "soprano" <<
         \global
