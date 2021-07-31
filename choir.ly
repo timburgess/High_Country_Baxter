@@ -258,12 +258,6 @@ yetsee-bass = {
 }
 
 
-
-
-
-
-
-   
 sopranonotes = \relative c'' {
   R2.*5
   \yetsee-soprano
@@ -337,34 +331,36 @@ basswords = \lyricmode {
 }
 
 \score {
-  \new ChoirStaff \with {midiInstrument = "flute"} <<
-    \new Staff <<
-      \new Voice = "soprano" <<
-        \global
-        \sopranonotes
+  <<
+    \new ChoirStaff \with {midiInstrument = "flute"} <<
+      \new Staff <<
+        \new Voice = "soprano" <<
+          \global
+          \sopranonotes
+        >>
+        \new Lyrics \lyricsto "soprano" \sopranowords
       >>
-      \new Lyrics \lyricsto "soprano" \sopranowords
-    >>
-    \new Staff <<
-      \new Voice = "alto" <<
-        \global
-        \altonotes
+      \new Staff <<
+        \new Voice = "alto" <<
+          \global
+          \altonotes
+        >>
+        \new Lyrics \lyricsto "alto" \altowords
       >>
-      \new Lyrics \lyricsto "alto" \altowords
-    >>
-    \new Staff <<
-      \new Voice = "tenor" <<
-        \global
-        \tenornotes
+      \new Staff <<
+        \new Voice = "tenor" <<
+          \global
+          \tenornotes
+        >>
+        \new Lyrics \lyricsto "tenor" \tenorwords
       >>
-      \new Lyrics \lyricsto "tenor" \tenorwords
-    >>
-    \new Staff <<
-      \new Voice = "bass" <<
-        \global
-        \bassnotes
+      \new Staff <<
+        \new Voice = "bass" <<
+          \global
+          \bassnotes
+        >>
+        \new Lyrics \lyricsto "bass" \basswords
       >>
-      \new Lyrics \lyricsto "bass" \basswords
     >>
     %\new PianoStaff <<
     %  \new Staff <<
