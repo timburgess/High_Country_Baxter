@@ -14,24 +14,24 @@ global = {
 
 alone-tenor = {
   \relative c' {
-    b4 c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 \mp c2 c8 b8 aes2 f4 g2  b4 c2
   }
   R2.
 }
 alone-bass = {
   \relative c {
-    b4 c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 \mp c2 c8 b8 aes2 f4 g2  b4 c2
   }
   R2.
 }
 
 yetsee-soprano = {
   \fixed c' {
-  <e'>4        % Yet
+  <e'>4 \ff       % Yet
   <g'>2        % see
   <e'>4        % Yet
   <d'>2 \break % see
-  <e'>4        % Yet
+  <e'>4 \mf       % Yet
   <g'>2        % see
   <e'>4        % Yet
   <d'>2        % see
@@ -47,7 +47,7 @@ yetsee-soprano = {
   <d'>4        %tain
   <a>2  \break %shine
 
-  <d'>4        %on
+  <d'>4  \mp      %on
   <d'>4.       %the
   <a>8         %up
   <d'>4        %land
@@ -66,10 +66,12 @@ yetsee-soprano = {
   <g>4         %anger
   r4 \break
 
+  \time 4/4
   <b>8     %su
   <c'>4       %ren
   <e>8     %der
-  <b>4       %to
+  <b>4.       %to
+  r8
 
   <b>8     %su
   <c'>4       %ren
@@ -81,19 +83,20 @@ yetsee-soprano = {
   <c'>4          %sky
   <b>4       %your
   <a>4.  %ang
-  <g>4       %ry
+  <g>8       %ry
   <g>2            %heart
-  \bar "||"
+  r2
+  \bar "|."
   }
 }
 
 yetsee-alto = {
   \fixed c' {
-  <b>4         % Yet
+  <b>4 \ff     % Yet
   <c'>2        % see
   <a>4         % Yet
   <b>2         % see
-  <b>4         % Yet
+  <b>4  \mf       % Yet
   <c'>2        % see
   <a>4         % Yet
   <b>2         % see
@@ -109,7 +112,7 @@ yetsee-alto = {
   <g>4         %tain
   <fis>2       %shine
 
-  <fis>4       %on
+  <fis>4 \mp      %on
   <g>4.        %the
   <b>8         %up
   <b>4         %land
@@ -128,28 +131,31 @@ yetsee-alto = {
   <d>4         %anger
   r4
 
+  \time 4/4
   <g>8         %su
   <e>4         %ren
   <c>8         %der
-  <d>4         %to
+  <d>4.         %to
+  r8
 
   <g>8         %su
   <e>4         %ren
   <c>8         %der
   <d>4         %to
 
-  <d>4       %the
+  <d>4         %the
   <a>4         %sky
-  <g>4       %your
-  <fis>4.  %ang
-  <g>4         %ry
+  <g>4         %your
+  <fis>4.      %ang
+  <g>8         %ry
   <d>2         %heart
+  r2
   }
 }
 
 yetsee-tenor = {
   \fixed c {
-  <g'>4        % Yet
+  <g'>4   \mf     % Yet
   <e'>2        % see
   <a>4         % Yet
   <d'>2        % see
@@ -165,7 +171,7 @@ yetsee-tenor = {
   <b>4         %tain
   <fis>2       %shine
 
-  <c'>4        %on
+  <c'>4  \mp      %on
   <d'>4.       %the
   <d'>8        %up
   <d'>4        %land
@@ -183,10 +189,12 @@ yetsee-tenor = {
   <b>4         %anger
   r4
 
+  \time 4/4
   <b>8         %su
   <c'>4        %ren
   <a>8         %der
-  <b>4         %to
+  <b>4.         %to
+  r8
 
   <b>8         %su
   <c'>4        %ren
@@ -197,14 +205,15 @@ yetsee-tenor = {
   <e'>4          %sky
   <e'>4       %your
   <c'>4.  %ang
-  <e'>4         %ry
+  <e'>8         %ry
   <b>2         %heart
+  r2
   }
 }
 
 yetsee-bass = {
   \fixed c {
-  <b>4         % Yet
+  <b>4  \mf       % Yet
   <c'>2        % see
   <e>4         % Yet
   <b>2         % see
@@ -220,7 +229,7 @@ yetsee-bass = {
   <d>4         %tain
   <d>2         %shine
 
-  <a,>4        %on
+  <a,>4   \mp     %on
   <b,>4.       %the
   <g,>8        %up
   <g,>4        %land
@@ -237,10 +246,12 @@ yetsee-bass = {
   <g>4         %anger
   r4
 
+  \time 4/4
   <d>8         %su
   <a,>4         %ren
   <a,>8         %der
-  <b,>4        %to
+  <b,>4.        %to
+  r8
 
   <d>8         %su
   <a,>4         %ren
@@ -251,9 +262,9 @@ yetsee-bass = {
   <c>4          %sky
   <e>4       %your
   <a>4.  %ang
-  %<a, d fis a c' fis' a'>4.  %ang
-  <c>4         %ry
+  <c>8         %ry
   <g,>2        %heart
+  r2
   }
 }
 
@@ -333,28 +344,28 @@ basswords = \lyricmode {
 \score {
   <<
     \new ChoirStaff \with {midiInstrument = "flute"} <<
-      \new Staff <<
+      \new Staff \with { instrumentName = "Soprano" } <<
         \new Voice = "soprano" <<
           \global
           \sopranonotes
         >>
         \new Lyrics \lyricsto "soprano" \sopranowords
       >>
-      \new Staff <<
+      \new Staff \with { instrumentName = "Alto" } <<
         \new Voice = "alto" <<
           \global
           \altonotes
         >>
         \new Lyrics \lyricsto "alto" \altowords
       >>
-      \new Staff <<
+      \new Staff \with { instrumentName = "Tenor" } <<
         \new Voice = "tenor" <<
           \global
           \tenornotes
         >>
         \new Lyrics \lyricsto "tenor" \tenorwords
       >>
-      \new Staff <<
+      \new Staff \with { instrumentName = "Bass" } <<
         \new Voice = "bass" <<
           \global
           \bassnotes
