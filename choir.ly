@@ -12,22 +12,36 @@ global = {
   \tempo 4 = 70
 }
 
+alone-soprano = {
+  \relative c'' {
+    R2.*4
+    b4 \pp c2 c8 b8 aes2 f4 g2 \break b4 c2
+  }
+}
+
+alone-alto = {
+  \relative c'' {
+    R2.*4
+    b4 \pp c2 c8 b8 aes2 f4 g2  b4 c2
+  }
+}
+
 alone-tenor = {
   \relative c' {
     b4 \mp c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2
   }
-  R2.
 }
 alone-bass = {
   \relative c {
-    b4 \mp c2 c8 b8 aes2 f4 g2  b4 c2
+    R2.*4
+    b4 \pp c2 c8 b8 aes2 f4 g2  b4 c2
   }
-  R2.
 }
 
 yetsee-soprano = {
   \fixed c' {
-  <e'>4 \ff       % Yet
+  <e'>4 \f       % Yet
   <g'>2        % see
   <e'>4        % Yet
   <d'>2 \break % see
@@ -92,7 +106,7 @@ yetsee-soprano = {
 
 yetsee-alto = {
   \fixed c' {
-  <b>4 \ff     % Yet
+  <b>4 \f     % Yet
   <c'>2        % see
   <a>4         % Yet
   <b>2         % see
@@ -270,11 +284,13 @@ yetsee-bass = {
 
 
 sopranonotes = \relative c'' {
-  R2.*5
+  \alone-soprano
+  R2.
   \yetsee-soprano
 
 }
 sopranowords = \lyricmode {
+  A -- lone we are born and die a -- lone
   Yet see, yet see
   yet see, yet see
   the red -gold cirr -- us
@@ -288,10 +304,12 @@ sopranowords = \lyricmode {
 
 
 altonotes = \relative c'' {
-  R2.*5
+  \alone-alto
+  R2.
   \yetsee-alto
 }
 altowords = \lyricmode {
+  A -- lone we are born and die a -- lone
   Yet see, yet see
   yet see, yet see
   the red -gold cirr -- us
@@ -307,10 +325,11 @@ altowords = \lyricmode {
 tenornotes = {
   \clef "G_8"
   \alone-tenor
-  R2.*2
+  R2.*3
   \yetsee-tenor
 }
 tenorwords = \lyricmode {
+  A -- lone we are born and die a -- lone
   A -- lone we are born and die a -- lone
   yet see, yet see
   the red -gold cirr -- us
@@ -326,7 +345,7 @@ tenorwords = \lyricmode {
 bassnotes = {
   \clef bass
   \alone-bass
-  R2.*2
+  R2.*3
   \yetsee-bass
 }
 basswords = \lyricmode {
@@ -339,6 +358,21 @@ basswords = \lyricmode {
   ride ea -- sy stra -- anger
   surr -- en -- der to surr -- en -- der to
   the sky your ang -- ry heart
+}
+
+accomp = {
+    \new PianoStaff \with { instrumentName = "Piano" } <<
+      \new Staff <<
+        \global
+        \clef treble
+        \partCombine \sopranonotes \altonotes
+      >>
+      \new Staff <<
+        \global
+        \clef bass
+        \partCombine \tenornotes \bassnotes
+      >>
+    >>
 }
 
 \score {
@@ -373,16 +407,7 @@ basswords = \lyricmode {
         \new Lyrics \lyricsto "bass" \basswords
       >>
     >>
-    %\new PianoStaff <<
-    %  \new Staff <<
-    %    \clef treble
-    %    \partcombine \sopranonotes \altonotes
-    %  >>
-    %  \new Staff <<
-    %    \clef bass
-    %    \partcombine \tenornotes \altonotes
-    %  >>
-    %>>
+    \accomp
   >>
   \layout { }
   \midi { }
