@@ -71,7 +71,6 @@ yetsee-soprano = {
   <e>8     %der
   <b>4       %to
 
-  r8
   <b>8     %su
   <c'>4       %ren
   <e>8     %der
@@ -84,7 +83,6 @@ yetsee-soprano = {
   <a>4.  %ang
   <g>4       %ry
   <g>2            %heart
-  r4
   \bar "||"
   }
 }
@@ -135,7 +133,6 @@ yetsee-alto = {
   <c>8         %der
   <d>4         %to
 
-  r8
   <g>8         %su
   <e>4         %ren
   <c>8         %der
@@ -147,7 +144,6 @@ yetsee-alto = {
   <fis>4.  %ang
   <g>4         %ry
   <d>2         %heart
-  r4
   }
 }
 
@@ -192,7 +188,6 @@ yetsee-tenor = {
   <a>8         %der
   <b>4         %to
 
-  r8
   <b>8         %su
   <c'>4        %ren
   <a>8         %der
@@ -204,7 +199,6 @@ yetsee-tenor = {
   <c'>4.  %ang
   <e'>4         %ry
   <b>2         %heart
-  r4
   }
 }
 
@@ -248,7 +242,6 @@ yetsee-bass = {
   <a,>8         %der
   <b,>4        %to
 
-  r8
   <d>8         %su
   <a,>4         %ren
   <a,>8         %der
@@ -261,78 +254,20 @@ yetsee-bass = {
   %<a, d fis a c' fis' a'>4.  %ang
   <c>4         %ry
   <g,>2        %heart
-  r4
   }
 }
 
 
 
 
-uplandroad = {
-  <a, d a d' fis' c''>4      %ride
-  <b, d g d' g' b'>4.        %ea
-  <b, d g d' g' a'>8         %sy
-  <g, d g b d' g'>4          %stra
-  <c e g c' e' g'>4          %anger
-  r4
-}
 
-surrender = {
-  <d, b, d b d' g' b'>8     %su
-  <a, c c' e' a' c''>4       %ren
-  <a, c e c' e' a' c''>8     %der
-  <b, d g b d' g' b'>4       %to
-}
-
-rh =  {
-  \alone-tenor
-  \yetsee-alto
-  \yetsee-alto
-  <e g b e' g' e'>4          %the
-  <d a d' fis' a' fis''>4    %red
-  <e g b e' g' b' g''>4      %gold
-  <c e a e' a' e''>4         %cirr
-  <d fis a d' fis' a' d''>2  \break %us
-
-  <b, d g d' g' d''>8        %o
-  <d fis a d' fis' a' d''>8  %ver
-  <b, d g d' g' d''>4        %snow
-  <e g b e'>4                %moun
-  <b, d g d' g'>4            %tain
-  <d fis a d' fis' a'>2      %shine
-  \break
-  \uplandroad
-  \uplandroad
-  \break
-  <a, e a c' e' a' c''>4    %rest
-  <e, b, e b e' g' b'>4     %ea
-  <g, b, d g b d' g' b'>4   %sy
-  <d, a, d a d' fis' a'>4   %stra
-  <g, b, d g b d' g'>4      %anger
-  r4 \break
-  \surrender
-  r8
-  \surrender
-  <b, d g b d' g' b'>4       %the
-  <c e a c' e' a'>4          %sky
-  <e, e g b e' g' b'>4       %your
-  <a, d fis a c' fis' a'>4.  %ang
-  <c, e g c' e' g'>8         %ry
-  <g, g b d' g'>2            %heart
-}
-
-lh =  {
-  \relative c, {
-    %<c c,>2 r4 | <aes aes,>2 r4 | <f f,>2 r4 | <g g,>2 r4
-    b4 c2.   c4 b4 aes4    
-  }
-}
 
 
    
 sopranonotes = \relative c'' {
   R2.*5
   \yetsee-soprano
+
 }
 sopranowords = \lyricmode {
   Yet see, yet see
@@ -431,6 +366,16 @@ basswords = \lyricmode {
       >>
       \new Lyrics \lyricsto "bass" \basswords
     >>
+    %\new PianoStaff <<
+    %  \new Staff <<
+    %    \clef treble
+    %    \partcombine \sopranonotes \altonotes
+    %  >>
+    %  \new Staff <<
+    %    \clef bass
+    %    \partcombine \tenornotes \altonotes
+    %  >>
+    %>>
   >>
   \layout { }
   \midi { }
