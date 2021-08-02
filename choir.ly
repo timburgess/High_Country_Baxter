@@ -14,15 +14,33 @@ global = {
 
 alone-soprano = {
   \relative c'' {
-    R2.*4
-    b4 \pp c2 c8 b8 aes2 f4 g2 \break b4 c2
+    R2.*3
+    b4 \pp c2 %alone
+    R2.
+    b4 c2  \break %alone
+    c8 b8 aes2 % we are born
+    b4 c2 %alone
+    R2.
+    b4 c2 %alone
+    c8 b8 aes2 \break % we are born
+    f4 c'2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2 \break
   }
 }
 
 alone-alto = {
   \relative c'' {
-    R2.*4
-    b4 \pp c2 c8 b8 aes2 f4 g2  b4 c2
+    R2.*3
+    b4 \pp c2 %alone
+    R2.
+    b4 c2 %alone
+    c8 b8 aes2
+    b4 c2 %alone
+    R2.
+    b4 c2 %alone
+    c8 b8 aes2 % we are born
+    f4 c'2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2
   }
 }
 
@@ -30,12 +48,15 @@ alone-tenor = {
   \relative c' {
     b4 \mp c2 c8 b8 aes2 f4 g2  b4 c2
     b4 c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2
   }
 }
 alone-bass = {
   \relative c {
-    R2.*4
+    R2.*8
     b4 \pp c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2
   }
 }
 
@@ -44,11 +65,11 @@ yetsee-soprano = {
   <e'>4 \f       % Yet
   <g'>2        % see
   <e'>4        % Yet
-  <d'>2 \break % see
+  <d'>2        % see
   <e'>4 \mf       % Yet
   <g'>2        % see
   <e'>4        % Yet
-  <d'>2        % see
+  <d'>2 \break       % see
   <b>4         %the
   <fis'>4      %red
   <g'>4        %gold
@@ -290,7 +311,9 @@ sopranonotes = \relative c'' {
 
 }
 sopranowords = \lyricmode {
-  A -- lone we are born and die a -- lone
+  A -- lone a -- lone we are born
+  a -- lone we are born and die a -- lone
+  a -- lone we are born and die a -- lone
   Yet see, yet see
   yet see, yet see
   the red -gold cirr -- us
@@ -309,7 +332,9 @@ altonotes = \relative c'' {
   \yetsee-alto
 }
 altowords = \lyricmode {
-  A -- lone we are born and die a -- lone
+  A -- lone a -- lone we are born
+  a -- lone we are born and die a -- lone
+  a -- lone we are born and die a -- lone
   Yet see, yet see
   yet see, yet see
   the red -gold cirr -- us
@@ -330,7 +355,9 @@ tenornotes = {
 }
 tenorwords = \lyricmode {
   A -- lone we are born and die a -- lone
-  A -- lone we are born and die a -- lone
+  a -- lone we are born and die a -- lone
+  a -- lone we are born and die a -- lone
+  a -- lone we are born and die a -- lone
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
@@ -350,6 +377,7 @@ bassnotes = {
 }
 basswords = \lyricmode {
   A -- lone we are born and die a -- lone
+  a -- lone we are born and die a -- lone
   yet see, yet see
   the red -gold cirr -- us
   o -- ver snow moun -- tain shine
@@ -361,7 +389,7 @@ basswords = \lyricmode {
 }
 
 accomp = {
-    \new PianoStaff \with { instrumentName = "Piano" } <<
+    \new PianoStaff \with { instrumentName = "Piano*" } <<
       \new Staff <<
         \global
         \clef treble
