@@ -14,49 +14,49 @@ global = {
 
 alone-soprano = {
   \relative c'' {
-    R2.*3
-    b4 \pp c2 %alone
-    R2.
-    b4 c2  \break %alone
+    \partial 4 r4 |
+    R2. R2. | r2 b4 \pp  | c2 r4 \break |
+    r2 b4 | c2  %alone
+    c8 b8 | aes2 % we are born
+    b4 c2 r4 %alone
+    r2
+    b4 c2 %alone
     c8 b8 aes2 % we are born
-    b4 c2 %alone
-    R2.
-    b4 c2 %alone
-    c8 b8 aes2 \break % we are born
     f4 c'2
-    b4 c2 c8 b8 aes2 f4 g2  b4 c2 \break
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2 r4 \break
   }
 }
 
 alone-alto = {
   \relative c'' {
-    R2.*3
-    b4 \pp c2 %alone
-    R2.
-    b4 c2 %alone
+    \partial 4 r4
+    R2. R2. r2 b4 \pp c2 r4
+    r2 b4 c2 %alone
     c8 b8 aes2
-    b4 c2 %alone
-    R2.
+    b4 c2 r4 %alone
+    r2
     b4 c2 %alone
     c8 b8 aes2 % we are born
     f4 c'2
-    b4 c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2 r4
   }
 }
 
 alone-tenor = {
   \relative c' {
-    b4 \mp c2 c8 b8 aes2 f4 g2  b4 c2
+    \partial 4 b4 \mp
+    \mp c2 c8 b8 aes2 f4 g2  b4 c2
     b4 c2 c8 b8 aes2 f4 g2  b4 c2
     b4 c2 c8 b8 aes2 f4 g2  b4 c2
-    b4 c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2 r4
   }
 }
 alone-bass = {
   \relative c {
-    R2.*8
-    b4 \pp c2 c8 b8 aes2 f4 g2  b4 c2
-    b4 c2 c8 b8 aes2 f4 g2  b4 c2
+    \partial 4 r4
+    R2.*7
+    r2 b4 \pp c2 c8 b8 aes2 f4 g2  b4 c2
+    b4 c2 c8 b8 aes2 f4 g2  b4 c2 r4
   }
 }
 
@@ -306,7 +306,6 @@ yetsee-bass = {
 
 sopranonotes = \relative c'' {
   \alone-soprano
-  R2.
   \yetsee-soprano
 
 }
@@ -328,7 +327,6 @@ sopranowords = \lyricmode {
 
 altonotes = \relative c'' {
   \alone-alto
-  R2.
   \yetsee-alto
 }
 altowords = \lyricmode {
@@ -350,7 +348,7 @@ altowords = \lyricmode {
 tenornotes = {
   \clef "G_8"
   \alone-tenor
-  R2.*3
+  R2.*2
   \yetsee-tenor
 }
 tenorwords = \lyricmode {
@@ -372,7 +370,7 @@ tenorwords = \lyricmode {
 bassnotes = {
   \clef bass
   \alone-bass
-  R2.*3
+  R2.*2
   \yetsee-bass
 }
 basswords = \lyricmode {
